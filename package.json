@@ -1,0 +1,26 @@
+{
+  "name": "minesweeper-challenge",
+  "version": "1.0.1",
+  "description": "Tap challenge Minesweeper video game",
+  "main": "index.js",
+  "author": "Maira Diaz Marraffini <maira.marraffini@gmail.com>",
+  "dependencies": {
+    "aws-sdk": "^2.747.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.10.4",
+    "path": "^0.12.7",
+    "serverless-http": "^1.5.5"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "dev": "sls offline start --skipCacheInvalidation",
+    "deploy": "sls deploy"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4",
+    "serverless": "^2.0.0",
+    "serverless-offline": "^6.7.0"
+  }
+}

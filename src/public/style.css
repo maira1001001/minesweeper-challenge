@@ -1,0 +1,130 @@
+/** @format */
+
+.container {
+  align-content: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.board {
+  width: fit-content;
+  flex-wrap: wrap;
+  background-color: #c0c0c0;
+  margin: 10px;
+  padding: 10px;
+  border: 10px solid #868686;
+}
+
+.row {
+  display: flex;
+}
+
+.field {
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  border: 5px solid;
+  box-sizing: border-box;
+}
+
+.covered {
+  border-color: #ffffff #808080 #808080 #ffffff;
+}
+
+.uncovered {
+  border: 1px solid;
+  background-color: #c0c0c0;
+  border-color: #838383;
+}
+
+.flagged {
+  border-color: #ffffff #808080 #808080 #ffffff;
+  background-position: center;
+  background-size: contain;
+  background-image: url('https://twemoji.maxcdn.com/2/72x72/1f6a9.png');
+}
+
+.mine {
+  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+  background-position: center;
+  background-size: contain;
+  background-image: url('https://twemoji.maxcdn.com/2/72x72/1f4a3.png');
+}
+
+.seleted-mine {
+  background-color: #e62e2d;
+}
+
+.one {
+  color: #1f01fe;
+}
+
+.two {
+  color: #3a7f05;
+}
+
+.three {
+  color: #e62e2d;
+}
+
+.four {
+  color: #0a0080;
+}
+
+.five {
+  color: #811515;
+}
+
+.six {
+  color: #3d8081;
+}
+
+.seven {
+  color: #000000;
+}
+
+.eight {
+  color: #808080;
+}
+
+#result {
+  color: #64cac2;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+#custom-validation {
+  color: #811515;
+}
+
+/* cards */
+.my-card {
+  height: fit-content;
+  width: fit-content;
+}
+
+.tap-primary {
+  color: #64cac2;
+}
+
+.my-card__media {
+  background-image: url('https://auntap.com/wp-content/uploads/2020/04/tap-logo.png');
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 70px;
+}
+
+.mdc-text-field--filled {
+  width: 80px;
+}
+
+.custom-game-container {
+  /* width: 250px; */
+  display: inline-flex;
+}
+
+.custom-game-container {
+  width: 80px;
+}

@@ -1,0 +1,25 @@
+# @format
+
+service: MineSweeper
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  profile: test
+  region: us-west-1
+  stage: dev
+
+plugins:
+  - serverless-offline
+functions:
+  api:
+    handler: src/index.handler
+    events:
+      - http:
+          path: /
+          method: ANY
+          cors: true
+      - http:
+          path: /{params+}
+          method: ANY
+          cors: true

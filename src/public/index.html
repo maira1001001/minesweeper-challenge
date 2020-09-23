@@ -1,0 +1,104 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Minesweeper</title>
+  
+  <link rel="stylesheet" href="/style.css"></link>
+  <script src="/app.js" charset="utf-8"></script>
+  <script src="/gameView.js" charset="utf-8"></script>
+  <script src="/gameLogic.js" charset="utf-8"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- material design -->
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+<body>
+
+<div class="mdc-card my-card mdc-card--outlined">
+  <div class="my-card__media"></div>
+  <div class="mdc-card__primary-action" tabindex="0">
+    <div class="mdc-card__actions">
+      <button class="mdc-button mdc-button--outlined mdc-card__action mdc-card__action--button" onclick='newBoardOnClick("beginner")'>
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label tap-primary">Beginner</span>
+      </button>
+      <button class="mdc-button mdc-button--outlined mdc-card__action mdc-card__action--button" onclick='newBoardOnClick("intermediate")'>
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label  tap-primary">Intermediate</span>
+      </button>
+      <button class="mdc-button mdc-button--outlined mdc-card__action mdc-card__action--button" onclick='newBoardOnClick("advance")'>
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label  tap-primary">Advance</span>
+      </button>
+    </div>
+
+    <div class="custom-game-container">
+      <form onsubmit="newCustomBoard()">
+    <label class="mdc-text-field mdc-text-field--filled mdc-text-field--fullwidth">
+      <span class="mdc-text-field__ripple"></span>
+      <input class="mdc-text-field__input"
+            id="custom-rows" 
+            name="custom-rows"
+             type="number"
+             min="1" max="9999"
+             placeholder="rows"
+             aria-label="rows"
+             required>
+      <span class="mdc-line-ripple"></span>
+    </label>
+    <label class="mdc-text-field mdc-text-field--filled mdc-text-field--fullwidth">
+      <span class="mdc-text-field__ripple"></span>
+      <input class="mdc-text-field__input"
+              id="custom-columns" 
+              name="custom-columns"
+              type="number"
+              min="1" max="9999"
+             placeholder="columns"
+             aria-label="columns"
+             required>
+      <span class="mdc-line-ripple"></span>
+    </label>
+    <label class="mdc-text-field mdc-text-field--filled mdc-text-field--fullwidth">
+      <span class="mdc-text-field__ripple"></span>
+      <input class="mdc-text-field__input"
+            id="custom-mines"
+            name="custom-mines"
+             type="number"
+             min="1" max="9999"
+            placeholder="mines"
+             aria-label="mines"
+             required>
+      <span class="mdc-line-ripple"></span>
+    </label>
+    <input class="mdc-button mdc-button--outlined tap-primary" type="button" onclick="newCustomBoardOnClick()" value="Custom game">
+    
+    <span id="custom-validation"></span>
+    </form>
+  </div>
+
+    <br>
+
+
+    <button class="mdc-button mdc-button--outlined mdc-card__action mdc-card__action--button" onclick="saveGame()" >
+      <div class="mdc-button__ripple"></div>
+      <span class="mdc-button__label  tap-primary">Save game</span>
+    </button>
+    <span id="save-game-msg"></span>
+
+    
+  </div>
+  <div class="container">
+  </div>
+  
+  <div id="result"></div>
+</div>
+</body>
+</html>
+
+
+
