@@ -1,8 +1,6 @@
 <!-- @format -->
 
-# tap-minesweeper-aws
-
-Tap challenge. Minesweeper Video Game
+# Minewseeper videgame challente
 
 [Play it](https://1ag6unegl7.execute-api.us-west-1.amazonaws.com/dev/)
 
