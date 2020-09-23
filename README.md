@@ -1,6 +1,6 @@
 <!-- @format -->
 
-# Minewseeper videgame challente
+# Minewseeper videgame challenge
 
 [Play it](https://1ag6unegl7.execute-api.us-west-1.amazonaws.com/dev/)
 
