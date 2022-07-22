@@ -117,3 +117,11 @@ The `GameLogic` has two board states: `board` y `lasGame`:
 # TODO
 
 1. show fields flagged
+
+# Prints creens
+
+![Minesweeper1 Game](https://github.com/maira1001001/minesweeper-challenge/blob/master/Screenshot%202022-07-22%20at%2014.18.46.png)
+
+![Minesweeper2 Game](https://github.com/maira1001001/minesweeper-challenge/blob/master/Screenshot%202022-07-22%20at%2014.24.27.png)
+
+![Minesweeper3 Game](https://github.com/maira1001001/minesweeper-challenge/blob/master/Screenshot%202022-07-22%20at%2014.25.05.png)
